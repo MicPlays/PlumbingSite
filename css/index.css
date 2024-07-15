@@ -1,0 +1,73 @@
+*
+{
+    padding:0;
+    margin: 0;
+}
+
+html, body
+{
+    height: 100%;    
+}
+
+main
+{
+    background-color:aqua;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.header
+{
+    height: 150px;
+    background-color: blueviolet;
+    display:flex;
+}
+
+nav
+{
+    display:flex;
+    align-items:center;
+    margin-right: 5%;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    max-height: 150px;
+    max-width: 400px;
+    margin-left: 10%;
+}
+
+.navlink
+{
+    margin: 20px;
+}
+
+.hero
+{
+    height: 50vh;   
+}
+
+.heroimg
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer
+{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer
+{
+    margin: auto;
+    width: fit-content;
+}
