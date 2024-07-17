@@ -1,0 +1,73 @@
+.projects
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+   gap: 40px;
+   padding: 40px;
+}
+
+.entry
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.entryhead
+{
+    text-align:center;
+}
+
+.entryimg
+{
+    margin: auto;
+    padding: 20px;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.entrytext
+{
+
+}
+
+.entry1
+{
+    margin: auto;
+}
+
+.entryhead1
+{
+
+}
+
+.entryimg1
+{
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.entrytext1
+{
+    padding-top: 10px;
+}
+
+/*Profile*/
+.profile
+{
+    margin:auto;
+    max-width: 60%;
+    display: flow-root;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.profileimg
+{
+    float: left;
+    margin-right: 15px;
+    max-width: 200px;
+}
+/*Profile*/
