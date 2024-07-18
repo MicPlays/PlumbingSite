@@ -10,28 +10,28 @@
 <body>
     <div class="hero">
         <header class="header">
-            <section class="headnav">
-                <a id="logolink" href="../pages/index.html"><img class="logo" src="../images/logo.png"></a>
+            <a id="logolink" href="../pages/index.html"><img class="logo" src="../images/logo.png"></a>
+            <div class="headertext">
                 <nav>
                     <a href="../pages/index.html" class="navlink">Home</a>
                     <a href="#abouthead" class="navlink">About</a> 
                     <a href="#servicehead" class="navlink">Services</a>
-                    <a href="#profileskip" class="navlink">Contact</a>
+                    <a href="#contacthead" class="navlink">Contact</a>
                     <a href="../pages/portfolio.html" class="navlink">Portfolio</a>
                 </nav>
-            </section>
-            <section class="headinfo">
-                <div class="infoblock" id="location">
-                    <h4>Location</h4>
-                    <p>1234 Plumbing St</p>
-                    <p>Nashville, TN 37036</p>
-                </div>
-                <div class="infoblock">
-                    <h4>Contact</h4>
-                    <p>plumber@gmail.com</p>
-                    <p>111-222-3333</p>
-                </div>
-            </section>
+                <section class="headinfo">
+                    <div class="infoblock" id="location">
+                        <h4>Location</h4>
+                        <p>1234 Plumbing St</p>
+                        <p>Nashville, TN 37036</p>
+                    </div>
+                    <div class="infoblock">
+                        <h4>Contact</h4>
+                        <p>plumber@gmail.com</p>
+                        <p>111-222-3333</p>
+                    </div>
+                </section>
+            </div>
         </header>
     </div>
     <div class="mainback">
@@ -70,6 +70,28 @@
                         <img class="logo" src="../images/logo.png">
                     </div>
                 </div>
+            </section>
+            <section class="contact">
+                <h2 id="contacthead">Contact Us</h2>
+                <form action="" method="">
+                    <ul id="formlist">
+                        <li class="formsection">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="user_name"/>
+                        </li>
+                        <li class="formsection">
+                            <label for="email">Email</label>
+                            <input type="email" id="mail" name="user_email"/>
+                        </li>
+                        <li class="formsection">
+                            <label for="message">Message</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
             </section>
         </main>
     </div>
