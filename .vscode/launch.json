@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Website",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "file": "D:/PlumbingWebsite/pages/index.html"
+        }
+    ]
+}
