@@ -21,18 +21,15 @@ img4.setAttribute("class", "galleryimg");
 imageContainer.appendChild(img4);
 
 const images = document.querySelectorAll(".galleryimg");
-
 let index = 0;
-let imageWidth = img1.clientWidth;
 
 const arrows = document.querySelectorAll(".arrow");
-const leftarrow = arrows[0];
-const rightarrow = arrows[1];
+arrows[0].addEventListener("click", SwipeLeft);
+arrows[1].addEventListener("click", SwipeRight);
 
-leftarrow.addEventListener("click", SwipeLeft);
-rightarrow.addEventListener("click", SwipeRight);
-
+let imageWidth = 1000;
 window.addEventListener("resize", OnWindowResize);
+window.addEventListener("load", OnWindowResize);
 
 function SwipeLeft()
 {
@@ -44,8 +41,7 @@ function SwipeLeft()
             left: imageWidth * index,
             behavior: "smooth"
         }
-    );
-    
+    );   
 }
 
 function SwipeRight()
@@ -63,7 +59,7 @@ function SwipeRight()
 
 function OnWindowResize()
 {
-    imageWidth = img1.clientWidth;
+    imageWidth = images[0].clientWidth;
     imageContainer.scroll(
         {
             left: (imageWidth * index),
@@ -71,3 +67,6 @@ function OnWindowResize()
         }
     );
 }
+
+
+
