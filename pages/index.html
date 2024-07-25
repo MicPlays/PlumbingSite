@@ -16,18 +16,18 @@
                 <nav>
                     <a href="../pages/index.html" class="navlink">Home</a>
                     <a href="#abouthead" class="navlink">About</a> 
-                    <a href="#servicehead" class="navlink">Services</a>
+                    <a href="#servicehead" class="navlink">Specializations</a>
                     <a href="#galleryhead" class="navlink">Gallery</a>
                     <a href="#contacthead" class="navlink">Contact</a>
                 </nav>
                 <section class="headinfo">
                     <div class="infoblock" id="location">
-                        <h4>Location</h4>
+                        <h4 class="infotype">Location</h4>
                         <p>1234 Plumbing St</p>
                         <p>Nashville, TN 37036</p>
                     </div>
                     <div class="infoblock">
-                        <h4>Contact</h4>
+                        <h4 class="infotype">Contact</h4>
                         <p>plumber@gmail.com</p>
                         <p>111-222-3333</p>
                     </div>
@@ -38,7 +38,7 @@
     <div class="mainback">
         <main>
             <section class="about">
-                <h2 id="abouthead">About</h2>
+                <h2 id="abouthead" class="heading">About</h2>
                 <p class="aboutpg">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -56,7 +56,7 @@
                 </p>
             </section>
             <section class="services">
-                <h2 id="servicehead">Services</h2>
+                <h2 id="servicehead" class="heading">Specializations</h2>
                 <div class="servicelist">
                     <div class="serviceitem">
                         <h3>Build Stuff</h3>
@@ -73,12 +73,16 @@
                 </div>
             </section>
             <section class="gallery">
-                <h2 id="galleryhead">Gallery</h2>
+                <h2 id="galleryhead" class="heading">Gallery</h2>
                 <div class="gallerywindow">
                     <div class="galleryinterface">
                         <div class="arrowcontainer">
-                            <button class="arrow" type="button"><</button>
-                            <button class="arrow" type="button">></button>
+                            <button class="arrow" type="button">
+                                <p class="arrowchar"><</p>
+                            </button>
+                            <button class="arrow" type="button">
+                                <p class="arrowchar">></p>
+                            </button>
                         </div>
                         <div class="textcontainer">
                             <p id="imagedesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -89,8 +93,8 @@
                     <div class="images"></div>
                 </div>
             </section>
-            <section class="contact">
-                <h2 id="contacthead">Contact Us</h2>
+            <section id="contacthead" class="contact">
+                <h2 class="heading">Contact Us</h2>
                 <form action="" method="">
                     <ul id="formlist">
                         <li class="formsection">
@@ -103,13 +107,17 @@
                         </li>
                         <li class="formsection">
                             <label for="message">Message</label>
-                            <textarea id="msg" name="user_message"></textarea>
+                            <textarea spellcheck=false id="msg" name="user_message"></textarea>
                         </li>
                         <li class="button">
-                            <button type="submit">Submit</button>
+                            <button id="submitbutton" type="submit">Submit</button>
                         </li>
                     </ul>
                 </form>
+                <div class="footercontact">
+                    <p>Phone: 111-222-333</p>
+                    <p>Email: plumber@gmail.com</p>
+                </div>
             </section>
         </main>
     </div>
