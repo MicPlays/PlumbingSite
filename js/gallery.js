@@ -1,35 +1,60 @@
+import { initializeApp } from 'firebase/app';
+import { getStorage, ref, listAll, getDownloadURL} from 'firebase/storage';
+// Your web app's Firebase configuration
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyDpoka9iKxgTeTkmujs4ZA4UwX7DyNo1og",
+
+  authDomain: "mechanicalwizards-569a0.firebaseapp.com",
+
+  projectId: "mechanicalwizards-569a0",
+
+  storageBucket: "mechanicalwizards-569a0.appspot.com",
+
+  messagingSenderId: "887837050645",
+
+  appId: "1:887837050645:web:fcf0b28f890ae528478b1c"
+
+};
+
+// Initialize Firebase
+
+
+const app = initializeApp(firebaseConfig);
+const storage = getStorage();
+const storageRef = ref(storage, 'images');
+
 const imageContainer = document.querySelector(".images");
+let images = [];
 
-const img1 = document.createElement("img");
-img1.src = "../images/hero.jpg";
-img1.setAttribute("class", "galleryimg");
-imageContainer.appendChild(img1);
 
-const img2 = document.createElement("img");
-img2.src = "../images/cheetohead.jpeg";
-img2.setAttribute("class", "galleryimg");
-imageContainer.appendChild(img2);
+listAll(storageRef)
+    .then((res) => {
+        res.items.forEach((itemRef) => {
+            getDownloadURL(itemRef)
+            .then((url) => {
+                const img = document.createElement("img");
+                img.src = url;
+                img.setAttribute('class', "galleryimg");
+                imageContainer.appendChild(img);
+                images.push(img);
+            });
+        });
+    }).catch((error) => {
+        console.log("error listing items");
+});
 
-const img3 = document.createElement("img");
-img3.src = "../images/cheetohead.jpeg";
-img3.setAttribute("class", "galleryimg");
-imageContainer.appendChild(img3);
 
-const img4 = document.createElement("img");
-img4.src = "../images/cheetohead.jpeg";
-img4.setAttribute("class", "galleryimg");
-imageContainer.appendChild(img4);
-
-const images = document.querySelectorAll(".galleryimg");
 let index = 0;
 
 const arrows = document.querySelectorAll(".arrow");
 arrows[0].addEventListener("click", SwipeLeft);
 arrows[1].addEventListener("click", SwipeRight);
 
-let imageWidth = 1000;
+const imageWidth = 1000;
 window.addEventListener("resize", OnWindowResize);
-window.addEventListener("load", OnWindowResize);
+//window.addEventListener("load", OnWindowResize);
 
 function SwipeLeft()
 {
@@ -59,13 +84,16 @@ function SwipeRight()
 
 function OnWindowResize()
 {
-    imageWidth = images[0].clientWidth;
-    imageContainer.scroll(
-        {
-            left: (imageWidth * index),
-            behavior: "instant"
-        }
-    );
+    if (images[0] != null)
+    {
+        imageWidth = images[0].clientWidth;
+        imageContainer.scroll(
+            {
+                left: (imageWidth * index),
+                behavior: "instant"
+            }
+        );
+    }
 }
 
 
