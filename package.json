@@ -11,8 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "firebase": "^10.12.4",
     "jquery": "^3.7.1"
+=======
+    "firebase": "^10.12.4"
+>>>>>>> parent of 878327f (Delete package.json)
   },
   "devDependencies": {
     "webpack": "^5.93.0",
