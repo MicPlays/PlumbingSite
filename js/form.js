@@ -5,7 +5,7 @@ $('form').on("submit", function(event){
     inputs.push($("#msg"));
     let values = [];
     for (let i = 0; i < inputs.length; i++) {
-        values.push(inputs[0].val());
+        values.push(inputs[i].val());
     }
     console.log(values);
     let fullMessage = values[2] + "\n\n" + values[0];
