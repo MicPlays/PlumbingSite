@@ -8,12 +8,13 @@
     <link rel = "stylesheet" href = "css/index.css">
     <script type="module" src = "dist/bundle.js"></script>
     <script type="module" src="jquery/dist/jquery.js"></script>
+    <script defer src="js/dropdown.js"></script>
     <script defer src="js/form.js"></script>
 </head>
 <body>
     <div class="hero">
         <header class="header">
-            <a id="logolink" href="pages/index.html"><img class="logo" src="images/logo.png"></a>
+            <a id="logolink" href="index.html"><img class="logo" src="images/logofinalnoback.png"></a>
             <div class="headertext">
                 <nav>
                     <a href="index.html" class="navlink">Home</a>
@@ -21,6 +22,18 @@
                     <a href="#servicehead" class="navlink">Specializations</a>
                     <a href="#galleryhead" class="navlink">Gallery</a>
                     <a href="#contacthead" class="navlink">Contact</a>
+                    <div class="dropdown">
+                        <button class="dropbutton" type="button">
+                            <p id="dropbuttontext">-</p>
+                        </button>
+                        <div class="dropcontent">
+                            <a href="index.html" class="droplink">Home</a>
+                            <a href="#abouthead" class="droplink">About</a> 
+                            <a href="#servicehead" class="droplink">Specializations</a>
+                            <a href="#galleryhead" class="droplink">Gallery</a>
+                            <a href="#contacthead" class="droplink">Contact</a>
+                        </div>
+                    </div>
                 </nav>
                 <section class="headinfo">
                     <div class="infoblock" id="location">
@@ -62,15 +75,15 @@
                 <div class="servicelist">
                     <div class="serviceitem">
                         <h3>Build Stuff</h3>
-                        <img class="logo" src="images/logo.png">
+                        <img class="logo" src="images/logofinal.png">
                     </div>
                     <div class="serviceitem">
                         <h3>Fix Stuff</h3>
-                        <img class="logo" src="images/logo.png">
+                        <img class="logo" src="images/logofinal.png">
                     </div>
                     <div class="serviceitem">
                         <h3>Other Stuff</h3>
-                        <img class="logo" src="images/logo.png">
+                        <img class="logo" src="images/logofinal.png">
                     </div>
                 </div>
             </section>

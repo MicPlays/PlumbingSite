@@ -25,13 +25,14 @@ html, body
     width: 100%;
     position: fixed;
     z-index: 5;
-    height: fit-content;
+    max-height: 150px;
     background-color: blueviolet;
     display:flex;
 }
 
 .headertext
 {
+    position: relative;
     display: flex;
     flex: 1;
 }
@@ -60,9 +61,44 @@ html, body
 
 nav 
 {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items:center;
+}
+
+.dropdown
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropbutton
+{
+    position: relative;
+    bottom: 20px;
+    padding: 0;
+    background-color: black;
+}
+
+#dropbuttontext
+{
+    padding-left: 5px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+
+.dropcontent
+{
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 
 .navlink
@@ -76,6 +112,11 @@ nav
 .navlink:hover
 {
     color: white;
+}
+
+.logo
+{
+    padding-left: 10px;
 }
 
 @media screen and (min-width: 970px)
@@ -99,11 +140,18 @@ nav
     {
         flex: 1;
         text-align: center;
+        font-size: 1rem;
     }
     .headertext{flex-direction: column;}
     .logo{max-height: 150px;}
     .headinfo{margin: auto;}
 }
+
+@media screen and (min-width: 660px)
+{.dropdown{display: none};}
+
+@media screen and (max-width: 660px)
+{.navlink{display: none};}
 /*Header*/
 
 /*Main Content*/
