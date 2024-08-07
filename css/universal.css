@@ -97,7 +97,8 @@ nav
 .dropmask
 {
     background-color: blue;
-    -webkit-clip-path: xywh(0 -20px 100% 100px);
+    -webkit-clip-path: none;
+    clip-path: xywh(0 -20px 100% 100px);
 }
 
 .dropcontent
