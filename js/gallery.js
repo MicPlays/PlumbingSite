@@ -38,7 +38,7 @@ const arrows = document.querySelectorAll(".arrow");
 arrows[0].addEventListener("click", SwipeLeft);
 arrows[1].addEventListener("click", SwipeRight);
 
-const imageWidth = 1000;
+let imageWidth = 1000;
 window.addEventListener("resize", OnWindowResize);
 
 function Entry(text, imgURL)

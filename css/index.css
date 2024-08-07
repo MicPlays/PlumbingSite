@@ -17,22 +17,22 @@
 
 .heading
 {
-    font-family: 'Lobster', 'Goudy Old Style', serif;
+    font-family: 'DancingScript', 'Goudy Old Style', serif;
     font-size: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
 
+@media screen and (max-width: 660px)
+{
+    .heading{font-size: 30px;}
+    #servicehead{padding-bottom: 0};
+}
+
 .aboutpg
 {
     margin-bottom: 20px;
-}
-
-#servicehead
-{
-    font-family: 'Lobster', 'Goudy Old Style', serif;
-    font-size: 60px;
 }
 
 .services
