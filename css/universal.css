@@ -96,9 +96,11 @@ nav
 
 .dropmask
 {
-    background-color: blue;
-    clip-path: xywh(0 -20px 100% 100px);
-    -webkit-clip-path: xywh(0 -20px 100% 100px);
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    clip-path: rect(45px 0px 200px 100%);
+    -webkit-clip-path: rect(45px 0px 200px 100%);
 }
 
 .dropcontent
