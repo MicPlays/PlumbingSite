@@ -58,7 +58,6 @@ html, body
     font-style: italic;
 }
 
-.infoblock#location {margin-left: 30px;}
 .logo {object-fit: contain;}
 #logolink{display: flex;}
 
@@ -72,6 +71,8 @@ nav
 
 .dropdown
 {
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
     z-index: 3;
     width: 100%;
@@ -84,7 +85,7 @@ nav
     position: relative;
     bottom: 20px;
     padding: 0;
-    background-color: black;
+    background-color: #370617;
 }
 
 #dropbuttontext
@@ -101,7 +102,7 @@ nav
     z-index: 1;
     width: 100%;
     height: 300px;
-    clip: inset(50px 0px 0px 0px);
+    clip: inset(45px 0px 0px 0px);
     clip-path: inset(45px 0px 0px 0px);
 }
 
@@ -109,11 +110,27 @@ nav
 {
     position: absolute;
     z-index: 2;
-    top: -50px;
+    top: -65px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background: linear-gradient(#9D0208, #DC2F02);
+}
+
+.droplink
+{
+    height: 20px;
+    text-decoration: none;
+    color: black;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    padding-left: 2px;
+}
+
+.droplink:hover
+{
+    background-color: #F48C06;
 }
 
 .navlink
@@ -166,7 +183,14 @@ nav
 {.dropdown{display: none};}
 
 @media screen and (max-width: 660px)
-{.navlink{display: none};}
+{
+    .navlink{display: none};
+    .headinfo{margin-bottom: 10px};
+    .infoblock{
+        margin-right: 15px;
+    }
+    .infotext {font-size: 12px;}
+}
 /*Header*/
 
 /*Main Content*/

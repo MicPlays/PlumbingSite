@@ -10,7 +10,7 @@ menuButton.addEventListener("click", () => {
         btnText.innerText = "V";
         animate({
             timing(timeFraction){return easeOutCubic(timeFraction)},
-            draw(progress) {dropContent.style.top = lerp(-50, 45, progress) + 'px';},
+            draw(progress) {dropContent.style.top = lerp(-65, 45, progress) + 'px';},
             duration: 500
         });
         menuActive = true;
@@ -21,7 +21,7 @@ menuButton.addEventListener("click", () => {
         animate({
             timing(timeFraction){return easeInCubic(timeFraction)},
             draw(progress) {
-                dropContent.style.top = lerp(45, -50, progress) + 'px';
+                dropContent.style.top = lerp(45, -65, progress) + 'px';
             },
             duration: 400
         });

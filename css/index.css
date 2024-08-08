@@ -15,6 +15,9 @@
     padding-bottom: 40px;
 }
 
+#abouthead
+{padding-bottom: 20px;}
+
 .heading
 {
     font-family: 'DancingScript', 'Goudy Old Style', serif;
@@ -35,6 +38,7 @@
 .aboutpg
 {
     margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .services
@@ -46,7 +50,6 @@
 
 .servicelist
 {
-    margin: auto;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -54,9 +57,22 @@
 
 .serviceitem
 {
-    flex: 1 150px;
+    font-size: 20px;
+    flex: 1 400px;
     margin-top: 50px;
-    margin-bottom: 50px;
+}
+
+.serviceicon
+{
+    max-width: 200px;
+}
+
+@media screen and (max-width: 660px) 
+{
+    .servicetag
+    {
+        font-size: 15px;
+    }
 }
 
 .contact
