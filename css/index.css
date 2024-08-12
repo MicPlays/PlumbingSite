@@ -22,8 +22,8 @@
 {
     font-family: 'DancingScript', 'Goudy Old Style', serif;
     font-size: 60px;
-    padding-top: 130px;
-    margin-top: -130px;
+    padding-top: 170px;
+    margin-top: -170px;
     -webkit-background-clip: content-box;
     background-clip: content-box;
     text-align: center;
@@ -62,9 +62,12 @@
     margin-top: 50px;
 }
 
-.serviceicon
+@media screen and (min-width: 660px)
 {
-    max-width: 200px;
+    .serviceicon
+    {
+        max-height: 250px;
+    }
 }
 
 @media screen and (max-width: 660px) 
@@ -72,6 +75,10 @@
     .servicetag
     {
         font-size: 15px;
+    }
+    .serviceicon
+    {
+        max-height: 100px;
     }
 }
 
@@ -210,7 +217,7 @@ button:hover
     left: 10%;
     right: 10%;
     width: 80%;
-    height: 20%;
+    height: 12%;
     border-radius: 10px 10px 0px 0px;
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
