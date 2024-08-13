@@ -51,6 +51,7 @@ function Entry(text, imgURL)
     getDownloadURL(itemRef)
     .then((url) => {
         this.img.src = url;
+        OnWindowResize();
     });
 } 
 

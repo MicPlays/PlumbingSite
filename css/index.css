@@ -172,7 +172,7 @@ button:hover
 .gallery
 {
     position: relative;
-    max-width: 1000px;
+    max-width: 60%;
     margin: auto;
     padding-bottom: 40px;
 }
