@@ -163,7 +163,7 @@ nav
     .headertext{justify-content: space-between;}
     .header{flex-wrap: wrap;}
     nav{margin-left: 20px;}
-    .logo{max-height: 120px;}
+    .logo{max-height: 100px;}
 }
 
 @media screen and (max-width: 970px)
