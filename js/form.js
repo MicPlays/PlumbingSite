@@ -16,7 +16,6 @@ $('form').on("submit", function(event){
     let eBody = encodeURIComponent(fullMessage);
     let to = encodeURIComponent("mechanicalwizardsllc@gmail.com");
     let address = "mailto:" + to + "?subject=" + eSubject + "&body=" + eBody;
-    console.log(address);
     window.location.href = address;
 });
 

@@ -291,3 +291,8 @@ button:hover
         height: 600px;
     }
 }
+
+#warning
+{
+    text-align: center;
+}
