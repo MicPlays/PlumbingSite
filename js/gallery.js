@@ -40,6 +40,15 @@ arrows[1].addEventListener("click", SwipeRight);
 
 let imageWidth = 1000;
 window.addEventListener("resize", OnWindowResize);
+const galleryWindow = document.querySelector(".gallerywindow");
+imageWidth = galleryWindow.clientWidth;
+console.log(galleryWindow.clientWidth);
+imageContainer.scroll(
+    {
+        left: 0,
+        behavior: "instant"
+    }
+);
 
 function Entry(text, imgURL)
 {
@@ -51,7 +60,6 @@ function Entry(text, imgURL)
     getDownloadURL(itemRef)
     .then((url) => {
         this.img.src = url;
-        OnWindowResize();
     });
 } 
 

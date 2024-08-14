@@ -197,15 +197,15 @@ nav
 .mainback
 {
     position: relative;
-    background: linear-gradient(to right, #03071e 1% , #370617 7%, #6A040F 15%, #9D0208 20%, #E85D04 50%, #9D0208 80%,
-    #6A040F 85%, #370617 93%, #03071e 99%);
+    background: linear-gradient(to right, #03071e 0% , #370617 3%, #6A040F 5%, #9D0208 10%, #E85D04 50%, #9D0208 90%,
+    #6A040F 95%, #370617 97%, #03071e 100%);
 }
 
 main
 {
     position: relative;
     background-color: #FAA307;
-    max-width: 1280px;
+    max-width: 960px;
     margin: auto;
 }
 /*Main Content*/

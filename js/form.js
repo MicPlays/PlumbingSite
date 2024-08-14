@@ -14,7 +14,7 @@ $('form').on("submit", function(event){
         subject = values[1];
     let eSubject = encodeURIComponent(subject);
     let eBody = encodeURIComponent(fullMessage);
-    let to = encodeURIComponent("micplays115@gmail.com");
+    let to = encodeURIComponent("mechanicalwizardsllc@gmail.com");
     let address = "mailto:" + to + "?subject=" + eSubject + "&body=" + eBody;
     console.log(address);
     window.location.href = address;
