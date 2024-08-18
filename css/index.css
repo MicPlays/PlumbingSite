@@ -86,6 +86,12 @@
 #pipeimg
 {width: 200px;}
 
+@media screen and (max-width: 660px)
+{
+#pipeimg
+{width: 100px;}
+}
+
 .contact
 {
     width: 70%;
