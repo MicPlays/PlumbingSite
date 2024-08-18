@@ -31,7 +31,7 @@ onValue(imgRef, (snapshot) => {
         const imgData = childSnapshot.val();
         images.push(new Entry(imgData.desc, imgData.url));
     })
-    imageDesc.innerText = images[0].text;
+    //imageDesc.innerText = images[0].text;
 });
 
 const arrows = document.querySelectorAll(".arrow");
@@ -76,7 +76,7 @@ function SwipeLeft()
                 behavior: "smooth"
             }
         );
-        imageDesc.innerText = images[index].text;   
+        //imageDesc.innerText = images[index].text;   
     }
 }
 
@@ -92,7 +92,7 @@ function SwipeRight()
                 behavior: "smooth"
             }
         );
-        imageDesc.innerText = images[index].text;   
+        //imageDesc.innerText = images[index].text;   
     }
 }
 
